@@ -11,8 +11,8 @@ It’s ideal for developers and businesses looking to self-host or customize the
 
 | Version | Demo Link | Access Info |
 |--------|------------|-------------|
-| 🆓 **Open Source (Public Demo)** | [https://demo.trainzy.fit](https://demo.trainzy.fit) | *Sample login credentials provided on login screen* |
-| 💼 **SaaS Edition Demo** | [https://trainzy.fit](https://trainzy.fit) | *Public-facing gym listing, offers, and features* |
+| 🆓 **Open Source (Public Demo)** | [https://trainzy.devuno.io/](https://trainzy.devuno.io/) | *admin-1@example.com/password123* |
+| 💼 **SaaS Edition Demo** | [https://trainzy-saas.devuno.io](https://trainzy-saas.devuno.io) | *Public-facing gym listing, offers, and features* |
 
 ---
 
@@ -50,14 +50,14 @@ The **SaaS version** of Trainzy is a **commercially licensed**, hosted solution 
 - 📈 Revenue & Activity Analytics  
 - 📦 Ongoing Updates + Priority Support
 
-📌 **View SaaS Demo:** [https://trainzy.fit](https://trainzy.fit)  
-📬 **Buy the SaaS Codebase:** Email [hello@trainzy.fit](mailto:hello@trainzy.fit)
+📌 **View SaaS Demo:** [https://trainzy-saas.devuno.io](https://trainzy-saas.devuno.io)  
+📬 **Buy the SaaS Codebase:** Email [rtbl20@gmail.com](mailto:rtbl20@gmail.com)
 
 ---
 
 ## 🧑‍💻 Tech Stack
 
-- **Backend:** Laravel 10+, Livewire  
+- **Backend:** Laravel 11+, Livewire  
 - **Frontend:** TailwindCSS, Alpine.js  
 - **Database:** MySQL  
 - **Export/Barcode Tools:** DOMPDF, Simple-QRCodes, milon/barcode  
@@ -134,8 +134,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full details.
 
 ## 📬 Contact & Support
 
-- 🌐 Website: [https://trainzy.fit](https://trainzy.fit)  
-- 📧 Email: [hello@trainzy.fit](mailto:hello@trainzy.fit)
+- 📧 Email: [rtbl20@gmail.com](mailto:rtbl20@gmail.com)
 
 ---
 
@@ -145,7 +144,7 @@ If you find Trainzy helpful:
 
 - 🌟 Star this repo  
 - 💬 Share with your network  
-- 💼 Upgrade to [Trainzy SaaS](https://trainzy.fit) to support continued development
+- 💼 Upgrade to [Trainzy SaaS](https://trainzy-saas.devuno.io) to support continued development
 
 ---
 
