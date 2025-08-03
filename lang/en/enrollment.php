@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'title' => 'Member Enrollment',
+    'list' => 'Enrollment List',
+    'create' => 'Create Enrollment',
+    'edit' => 'Edit Enrollment',
+    'details' => 'Enrollment Details',
+    'member' => 'Member',
+    'activity' => 'Activity',
+    'enrollment_date' => 'Enrollment Date',
+    'start_date' => 'Start Date',
+    'end_date' => 'End Date',
+    'status' => 'Status',
+    'active' => 'Active',
+    'completed' => 'Completed',
+    'cancelled' => 'Cancelled',
+    'attendance' => 'Attendance',
+    'attendance_rate' => 'Attendance Rate',
+    'sessions_attended' => 'Sessions Attended',
+    'total_sessions' => 'Total Sessions',
+    'mark_attendance' => 'Mark Attendance',
+    'present' => 'Present',
+    'absent' => 'Absent',
+    'confirm_delete' => 'Are you sure you want to delete this enrollment?',
+    'created' => 'Enrollment created successfully.',
+    'updated' => 'Enrollment updated successfully.',
+    'deleted' => 'Enrollment deleted successfully.',
+    'not_found' => 'Enrollment not found.',
+    'validation' => [
+        'member_role' => 'Only members can enroll in time slots.',
+    ],
+]; 

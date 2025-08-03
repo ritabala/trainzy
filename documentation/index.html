@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainzy - Documentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .sidebar {
+            width: 280px;
+            height: calc(100vh - 60px);
+            position: fixed;
+            overflow-y: auto;
+            scrollbar-width: thin;
+            scrollbar-color: #CBD5E0 #F7FAFC;
+        }
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .sidebar::-webkit-scrollbar-track {
+            background: #F7FAFC;
+        }
+        .sidebar::-webkit-scrollbar-thumb {
+            background-color: #CBD5E0;
+            border-radius: 3px;
+        }
+        .content {
+            margin-left: 280px;
+        }
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .content {
+                margin-left: 0;
+            }
+        }
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, #3B82F6, #60A5FA);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="h-[60px] border-b bg-white fixed w-full z-10 shadow-sm">
+        <div class="h-full max-w-7xl px-4 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <img src="../public/images/logo/logo.svg" alt="Trainzy Logo" class="h-8 w-auto">
+                <h1 class="text-xl font-semibold text-gray-900">Trainzy Documentation</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="flex pt-[60px]">
+        <!-- Sidebar -->
+        <aside class="sidebar bg-white border-r">
+            <nav class="p-6">
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Getting Started</h2>
+                    <div class="space-y-1">
+                        <a href="#" class="block px-3 py-2 text-sm text-blue-600 font-medium rounded-md bg-blue-50 border border-blue-100">
+                            Introduction
+                        </a>
+                        <a href="https://scribehow.com/shared/Install_and_Sign_In_to_Trainzy_System__S1GdTFl4S9mP_T7XSkZLRA" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Installation & Sign In
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Superadmin Panel</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Super_Admin_Dashboard_and_Settings__Wf0Zg4CYRniXlfBPzxzHKw" target="_blank" class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Dashboard Overview
+                        </a>
+                        <a href="https://scribehow.com/shared/How_To_Add_And_Manage_A_Gym_In_System__pPyrm2e2TmGod2XWvUCVAw" target="_blank" class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Gym Management
+                        </a>
+                        <a href="https://scribehow.com/shared/Creating_and_Managing_Subscription_Packages__Fq2Fo-BoRGiEQE8kbV_qaA" target="_blank" class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Package Management
+                        </a>
+                       
+                        <a href="https://scribehow.com/shared/View_Gym_Subscriptions_and_Payments__4ku46Q5rQmOzrQCx36i0lw" target="_blank" class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Payment Management
+                        </a>
+
+                        <a href="https://scribehow.com/shared/Enable_Stripe_Payment_Gateway_and_Upgrade_Subscription_Plan_using_Stripe__0Q5_RmjGT7KlQDHv5yNzPw?referrer=documents" target="_blank" class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                           Stripe Settings
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Settings & User Management</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Settings__dPrJ3QDrTcmFBkEYlpO-Zg?referrer=documents" target="_blank" 
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Settings
+                        </a>
+                        <a href="https://scribehow.com/shared/User_Role_Management__g_B2yUm4QEmHwXPi8z6Ryw?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            User Role Management
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Financial Management</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Reports__Membership_and_Revenue__ZYHo7Oy6Q-q-TqWaFompCQ?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Reports (Memberships & Revenue)
+                        </a>
+                        <a href="https://scribehow.com/shared/Manage_Invoices_and_Payments__G3YyJD6VS9KzceYi1XUnPA?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Manage Invoices & Payments
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Member Management</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Manage_Member__shv5B9V5Q8iD8A52juKzew?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Manage Member
+                        </a>
+                        <a href="https://scribehow.com/shared/Manage_Memberships_and_View_User_Memberships__zaxtOWvnQOWQpeGlQsDdJA?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Manage Memberships
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Staff & Services</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Manage_Staff_and_View_Staff_Schedule__wHHf39g3SOOqI0K7ajUYDQ?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Manage Staff & Schedule
+                        </a>
+                        <a href="https://scribehow.com/shared/Manage_a_Service__-awkO6_ORZqI0Ff-hLujsA?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Manage a Service
+                        </a>
+                        <a href="https://scribehow.com/shared/Create_Edit_Delete_and_Schedule_an_Activity_Classes__List_View__XaonUy8SRky26hMjtaz2dw?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Manage Activity Classes
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Member & Staff Attendance</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Managing_Attendance_for_Members_and_Staff__bexWBVqDSvWqj0wQMx3lyQ?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Manual Attendance
+                        </a>
+                        <a href="https://scribehow.com/shared/Scanner_Attendance__QYGd-HrbQDuEkhXoyR7TSA?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            QR Code Attendance
+                        </a>
+                    </div>
+                </div>
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Messages</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Compose_and_Send_a_Message__BsUdqAFjRyCVMwqTfVlGzw?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                           Compose & Send a Message
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3">Upgrade Plan</h2>
+                    <div class="space-y-1">
+                        <a href="https://scribehow.com/shared/Upgrade_Your_Plan_Using_Offline_Payment__4-RlzMpJQgy6EuzL46yMqw?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                           Offline Payment
+                        </a>
+                        <a href="https://scribehow.com/shared/Upgrade_Your_Plan_Using_Stripe__0Q5_RmjGT7KlQDHv5yNzPw?referrer=documents" target="_blank"
+                           class="block px-3 py-2 text-sm text-gray-700 hover:text-blue-600 hover:bg-gray-50 rounded-md transition-colors">
+                            Stripe Payment
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content flex-1 p-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="prose prose-blue max-w-none">
+                    <div class="gradient-border bg-white rounded-lg shadow-sm p-8 mb-8">
+                        <h1 class="text-3xl font-bold text-gray-900 mb-4">Welcome to Trainzy - Gym Management & Listing SaaS  
+                        </h1>
+                        <p class="text-lg text-gray-600">
+                            Comprehensive documentation and guides to help you manage your fitness center effectively. 
+                            Whether you're getting started or looking for advanced features, you'll find everything you need here.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-rocket text-blue-600"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900">Getting Started</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">Learn the basics of Trainzy and get started with your fitness center management.</p>
+                            <div class="space-y-2">
+                                <a href="https://scribehow.com/shared/Install_and_Sign_In_to_Trainzy_System__S1GdTFl4S9mP_T7XSkZLRA" target="_blank"
+                                   class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                                    Installation Guide
+                                    <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                                <br>
+                                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                                    Quick Start Guide
+                                    <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md transition-shadow">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-users text-blue-600"></i>
+                                </div>
+                                <h3 class="text-lg font-semibold text-gray-900">User Management</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">Learn how to manage users, roles, and permissions in your fitness center.</p>
+                            <a href="https://scribehow.com/shared/User_Role_Management__g_B2yUm4QEmHwXPi8z6Ryw?referrer=documents" target="_blank" 
+                               class="text-blue-600 hover:text-blue-800 font-medium inline-flex items-center">
+                                Learn More
+                                <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Superadmin Panel Documentation -->
+                    <div id="superadmin-dashboard" class="mb-12">
+                        <h2 class="text-2xl font-bold text-gray-900 mb-6">Superadmin Panel</h2>
+                        
+                        <div class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-purple-50 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-crown text-purple-600"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Dashboard Overview</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                The Superadmin Dashboard provides a comprehensive overview of all fitness centers in the system. 
+                                It displays key metrics including total gyms, active packages, and recent gym registrations.
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="text-2xl font-bold text-blue-600">XX</div>
+                                    <div class="text-sm text-gray-600">Total Gyms</div>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="text-2xl font-bold text-green-600">XX</div>
+                                    <div class="text-sm text-gray-600">Active Packages</div>
+                                </div>
+                                <div class="bg-gray-50 rounded-lg p-4">
+                                    <div class="text-2xl font-bold text-orange-600">XX</div>
+                                    <div class="text-sm text-gray-600">Today's Registrations</div>
+                                </div>
+                            </div>
+                            <p class="text-sm text-gray-500">
+                                The dashboard also shows a list of recent gym registrations with their basic information, 
+                                active packages, and creation dates for quick monitoring.
+                            </p>
+                        </div>
+
+                        <div id="gym-management" class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-building text-blue-600"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Gym Management</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Manage all fitness centers in the system with comprehensive gym management features.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-blue-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Add New Gym</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Create new fitness centers with complete setup:</p>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Basic gym information (name, address, contact details)</li>
+                                        <li>• Logo and branding customization</li>
+                                        <li>• Timezone and currency settings</li>
+                                        <li>• Admin user creation with automatic role assignment</li>
+                                        <li>• Package assignment and subscription setup</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-green-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Edit Gym Details</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Modify existing gym information and settings:</p>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Update gym profile and contact information</li>
+                                        <li>• Change logo and branding elements</li>
+                                        <li>• Modify timezone and currency preferences</li>
+                                        <li>• Update package subscriptions</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-purple-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Gym Impersonation</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Access gym admin panels directly:</p>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Seamlessly switch to gym admin view</li>
+                                        <li>• Troubleshoot gym-specific issues</li>
+                                        <li>• Provide direct support to gym administrators</li>
+                                        <li>• Monitor gym operations in real-time</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-red-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Gym Deletion</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Remove gyms from the system when needed:</p>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Permanent removal of gym data</li>
+                                        <li>• Automatic cleanup of associated records</li>
+                                        <li>• Confirmation prompts for safety</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="package-management" class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-box text-green-600"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Package Management</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Create and manage subscription packages that gyms can purchase to access different features and modules.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-blue-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Package Types</h4>
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div class="bg-gray-50 rounded-lg p-4">
+                                            <h5 class="font-medium text-gray-900 mb-2">Free Plans</h5>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Default Package (basic features)</li>
+                                                <li>• Trial Package (time-limited access)</li>
+                                                <li>• Limited member and staff capacity</li>
+                                            </ul>
+                                        </div>
+                                        <div class="bg-gray-50 rounded-lg p-4">
+                                            <h5 class="font-medium text-gray-900 mb-2">Paid Plans</h5>
+                                            <ul class="text-sm text-gray-600 space-y-1">
+                                                <li>• Standard Package (monthly/annual billing)</li>
+                                                <li>• Lifetime Package (one-time payment)</li>
+                                                <li>• Full feature access</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-l-4 border-green-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Package Configuration</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Set pricing for different billing cycles</li>
+                                        <li>• Configure member, staff, and class limits</li>
+                                        <li>• Select available modules and features</li>
+                                        <li>• Define trial periods and notifications</li>
+                                        <li>• Integrate with payment gateways (Stripe)</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-purple-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Module Management</h4>
+                                    <p class="text-gray-600 text-sm mb-2">Control which features are available in each package:</p>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Core modules (members, staff, classes)</li>
+                                        <li>• Additional modules (reports, advanced features)</li>
+                                        <li>• Module activation/deactivation</li>
+                                        <li>• Feature-based access control</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="superadmin-settings" class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-orange-50 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-cog text-orange-600"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">System Settings</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Configure global system settings that affect all fitness centers in the platform.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-blue-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Application Settings</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Global application name and branding</li>
+                                        <li>• System logo and favicon</li>
+                                        <li>• Default currency configuration</li>
+                                        <li>• Language and localization settings</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-green-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Currency Management</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Add and manage supported currencies</li>
+                                        <li>• Set currency symbols and codes</li>
+                                        <li>• Configure exchange rates</li>
+                                        <li>• Enable/disable currencies for gyms</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-purple-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Payment Gateway Configuration</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Stripe integration setup</li>
+                                        <li>• API key configuration</li>
+                                        <li>• Webhook endpoint management</li>
+                                        <li>• Payment gateway status monitoring</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="payment-management" class="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+                            <div class="flex items-center mb-4">
+                                <div class="w-10 h-10 bg-yellow-50 rounded-lg flex items-center justify-center mr-4">
+                                    <i class="fas fa-credit-card text-yellow-600"></i>
+                                </div>
+                                <h3 class="text-xl font-semibold text-gray-900">Payment Management</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">
+                                Monitor and manage all payment activities across the platform.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="border-l-4 border-blue-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Gym Subscription History</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• View all gym package subscriptions</li>
+                                        <li>• Track subscription status and changes</li>
+                                        <li>• Monitor billing cycles and renewals</li>
+                                        <li>• Access subscription analytics</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-green-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Payment Tracking</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• View all gym payments across the platform</li>
+                                        <li>• Monitor payment status and history</li>
+                                        <li>• Track revenue and financial metrics</li>
+                                        <li>• Generate payment reports</li>
+                                    </ul>
+                                </div>
+                                <div class="border-l-4 border-purple-500 pl-4">
+                                    <h4 class="font-semibold text-gray-900 mb-2">Offline Payment Requests</h4>
+                                    <ul class="text-sm text-gray-600 space-y-1 ml-4">
+                                        <li>• Manage offline payment requests from gyms</li>
+                                        <li>• Approve or reject payment confirmations</li>
+                                        <li>• Track manual payment processing</li>
+                                        <li>• Maintain payment audit trail</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-gray-900 mb-6">Popular Topics</h2>
+                    <div class="space-y-4">
+                        <a href="https://scribehow.com/shared/Manage_Member__shv5B9V5Q8iD8A52juKzew?referrer=documents" target="_blank" 
+                           class="block bg-white border border-gray-200 rounded-lg p-6 hover:border-blue-500 hover:shadow-md transition-all">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-user-friends text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Managing Members</h3>
+                                    <p class="text-gray-600">Learn how to add, edit, and manage members in your fitness center.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://scribehow.com/shared/Reports__Membership_and_Revenue__ZYHo7Oy6Q-q-TqWaFompCQ?referrer=documents" target="_blank"
+                           class="block bg-white border border-gray-200 rounded-lg p-6 hover:border-blue-500 hover:shadow-md transition-all">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-line text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Reports & Revenue</h3>
+                                    <p class="text-gray-600">Track your fitness center's performance with detailed reports and analytics.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://scribehow.com/shared/Manage_Staff_and_View_Staff_Schedule__wHHf39g3SOOqI0K7ajUYDQ?referrer=documents" target="_blank"
+                           class="block bg-white border border-gray-200 rounded-lg p-6 hover:border-blue-500 hover:shadow-md transition-all">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-user-tie text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-medium text-gray-900 mb-2">Staff Management</h3>
+                                    <p class="text-gray-600">Learn how to manage staff schedules and assignments effectively.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

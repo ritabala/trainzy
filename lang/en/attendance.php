@@ -1,0 +1,38 @@
+<?php
+
+return [
+    'qr_codes' => 'QR Codes',
+    'scan_qr_code' => 'Scan QR Code',
+    'scan_instructions' => 'Scan Instructions',
+    'scan_instructions_text' => 'Present this QR code to the scanner to record your attendance.',
+    'export_pdf' => 'Export PDF',
+    'search' => 'Search',
+    'date_from' => 'Date From',
+    'date_to' => 'Date To',
+    'name' => 'Name',
+    'email' => 'Email',
+    'created_at' => 'Created At',
+    'actions' => 'Actions',
+    'view_qr' => 'View QR Code',
+    'close' => 'Close',
+    'scanned_at' => 'Scanned At',
+    'qr_code' => 'QR Code',
+    'scan_title' => 'Scan QR Code',
+    'view_large' => 'View',
+    'no_qr_codes_found' => 'No QR codes found',
+    'try_adjusting_filters' => 'Try adjusting the filters to find the QR code you are looking for.',
+    
+    // QR Scanner new translations
+    'search_placeholder' => 'Search by name or email',
+    'date_from_placeholder' => 'Select date from',
+    'date_to_placeholder' => 'Select date to',
+    'date_from_placeholder' => 'Select date from',
+    'record_attendance' => 'Record Attendance',
+    'record_attendance_title' => 'Record Attendance',
+    'invalid_qr_code' => 'Invalid QR code. Please try again.',
+    'recorded_successfully' => 'Attendance recorded successfully for :name',
+    'recording_failed' => 'Failed to record attendance. Please try again.',
+    'download' => 'Download',
+    'export_all' => 'Export All (ZIP)',
+    'export_failed' => 'Failed to export QR codes. Please try again.',
+]; 
