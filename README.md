@@ -106,7 +106,7 @@ php artisan serve
 
 | Dashboard | Class Scheduler | Member Profile |
 |----------|------------------|----------------|
-| ![](screenshots/dashboard.png) | ![](screenshots/scheduler.png) | ![](screenshots/member-profile.png) |
+| ![dashboard](screenshots/dashboard.png) | ![scheduler](screenshots/scheduler.png) | ![member profile](screenshots/member-profile.png) |
 
 ---
 
